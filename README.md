@@ -17,7 +17,6 @@
       "rules": [
       {
         "domain": [
-          "regexp:^([\\w\\-\\.]+\\.)ua$",
           "ext:zkeen.dat:domains"
         ],
         "outboundTag": "proxy",
