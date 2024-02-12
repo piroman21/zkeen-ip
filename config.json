@@ -1,0 +1,32 @@
+{
+  "input": [
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "cloudflare",
+        "uri": "./data/cloudflare",
+        "onlyIPType": "ipv4"
+      }
+    },
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "telegram",
+        "uri": "./data/telegram",
+        "onlyIPType": "ipv4"
+      }
+    }
+  ],
+  "output": [
+    {
+      "type": "v2rayGeoIPDat",
+      "action": "output",
+      "args": {
+        "outputDir": "./",
+        "outputName": "zkeenip.dat"
+      }
+    }
+  ]
+}
