@@ -1,6 +1,7 @@
 ## Список IP-адресов выборочного роутинга для проекта XKeen
 
 Подробнее о проекте XKeen по ссылке <https://forum.keenetic.com/topic/16899-xray-на-entware-xkeen/>
+Telegram чат - <https://t.me/+SZWOjSlvYpdlNmMy>
 
 Сборка содержит IP-подсети Cloudflare и Telegram, и рекомендуется, как дополнение к списку доменов <https://github.com/jameszeroX/zkeen-domains>
 
