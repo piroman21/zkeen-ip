@@ -2,7 +2,7 @@
 
 Подробнее о проекте XKeen по ссылке <https://forum.keenetic.com/topic/16899-xray-на-entware-xkeen/>
 
-Telegram чат - <https://t.me/+SZWOjSlvYpdlNmMy>
+Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
 
 Сборка содержит IP-подсети Cloudflare и Telegram, и рекомендуется, как дополнение к списку доменов <https://github.com/jameszeroX/zkeen-domains>
 
@@ -22,7 +22,7 @@ Telegram чат - <https://t.me/+SZWOjSlvYpdlNmMy>
           "ext:zkeen.dat:domains"
         ],
         "inboundTag": ["redirect", "tproxy"],
-        "outboundTag": "vless-reality",
+        "outboundTag": "block",
         "type": "field"
       },
       {
@@ -31,7 +31,7 @@ Telegram чат - <https://t.me/+SZWOjSlvYpdlNmMy>
           "ext:zkeenip.dat:telegram"
         ],
         "inboundTag": ["redirect", "tproxy"],
-        "outboundTag": "vless-reality",
+        "outboundTag": "block",
         "type": "field"
       },
       {
