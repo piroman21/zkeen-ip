@@ -4,13 +4,13 @@
 
 Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
 
-Сборка содержит IP-подсети Cloudflare и Telegram, и рекомендуется, как дополнение к списку доменов <https://github.com/jameszeroX/zkeen-domains>
+Сборка содержит IP-подсети Cloudflare, Telegram, России и Украины, и рекомендуется, как дополнение к списку доменов <https://github.com/jameszeroX/zkeen-domains>
 
 ## Ссылка для загрузки крайней версии
 
 - <https://github.com/jameszeroX/zkeen-ip/releases/latest/download/zkeenip.dat>
 
-## Пример использования
+## Примеры использования
 
 ```json
 {
@@ -28,7 +28,8 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
       {
         "ip": [
           "ext:zkeenip.dat:cloudflare",
-          "ext:zkeenip.dat:telegram"
+          "ext:zkeenip.dat:telegram",
+          "ext:zkeenip.dat:ua"
         ],
         "inboundTag": ["redirect", "tproxy"],
         "outboundTag": "block",
@@ -37,6 +38,46 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
       {
         "inboundTag": ["redirect", "tproxy"],
         "outboundTag": "direct",
+        "type": "field"
+      }
+    ]
+  }
+}
+```
+```
+{
+  "routing": {
+    "domainStrategy": "IPOnDemand",
+      "rules": [
+      {
+        "domain": [
+          "regexp:^([\\w\\-\\.]+\\.)su$",
+          "regexp:^([\\w\\-\\.]+\\.)ru$",
+          "regexp:^([\\w\\-\\.]+\\.)xn--p1ai$",
+          "regexp:^([\\w\\-\\.]+\\.)xn--p1acf$",
+          "regexp:^([\\w\\-\\.]+\\.)xn--80asehdb$",
+          "regexp:^([\\w\\-\\.]+\\.)xn--c1avg$",
+          "regexp:^([\\w\\-\\.]+\\.)xn--80aswg$",
+          "regexp:^([\\w\\-\\.]+\\.)xn--80adxhks$",
+          "regexp:^([\\w\\-\\.]+\\.)xn--d1acj3b$",
+          "regexp:^([\\w\\-\\.]+\\.)moscow$",
+          "regexp:^([\\w\\-\\.]+\\.)by$"
+        ],
+        "inboundTag": ["redirect", "tproxy"],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "ext:zkeenip.dat:ru"
+        ],
+        "inboundTag": ["redirect", "tproxy"],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "inboundTag": ["redirect", "tproxy"],
+        "outboundTag": "block",
         "type": "field"
       }
     ]
