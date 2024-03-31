@@ -44,7 +44,7 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
   }
 }
 ```
-```
+```json
 {
   "routing": {
     "domainStrategy": "IPOnDemand",
