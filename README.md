@@ -19,10 +19,21 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
       "rules": [
       {
         "domain": [
-          "ext:zkeen.dat:domains"
+          "ext:zkeen.dat:bypass"
         ],
         "inboundTag": ["redirect", "tproxy"],
-        "outboundTag": "block",
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "ext:zkeen.dat:domains",
+          "ext:zkeen.dat:politic",
+          "ext:zkeen.dat:youtube",
+          "ext:zkeen.dat:other"
+        ],
+        "inboundTag": ["redirect", "tproxy"],
+        "outboundTag": "dummy",
         "type": "field"
       },
       {
@@ -32,7 +43,7 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
           "ext:zkeenip.dat:ua"
         ],
         "inboundTag": ["redirect", "tproxy"],
-        "outboundTag": "block",
+        "outboundTag": "dummy",
         "type": "field"
       },
       {
