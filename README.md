@@ -62,6 +62,23 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
       "rules": [
       {
         "domain": [
+          "4pda.ru",
+          "abook-club.ru",
+          "amdm.ru",
+          "avast.ru",
+          "imgpng.ru",
+          "livesurf.ru",
+          "onlinesim.ru",
+          "rutracker.ru",
+          "pcbway.ru",
+          "php.su"
+        ],
+        "inboundTag": ["redirect", "tproxy"],
+        "outboundTag": "dummy",
+        "type": "field"
+      },
+      {
+        "domain": [
           "regexp:^([\\w\\-\\.]+\\.)su$",
           "regexp:^([\\w\\-\\.]+\\.)ru$",
           "regexp:^([\\w\\-\\.]+\\.)xn--p1ai$",
