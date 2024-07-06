@@ -88,7 +88,7 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
       },
       {
         "inboundTag": ["redirect", "tproxy"],
-        "outboundTag": "block",
+        "outboundTag": "dummy",
         "type": "field"
       }
     ]
