@@ -97,7 +97,8 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
       },
       {
         "ip": [
-          "ext:zkeenip.dat:ru"
+          "ext:zkeenip.dat:ru",
+          "ext:zkeenip.dat:by"
         ],
         "inboundTag": ["redirect", "tproxy"],
         "outboundTag": "direct",
