@@ -4,15 +4,18 @@
 
 Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
 
-Сборка содержит IP-подсети Cloudflare, Telegram, России и Украины, и рекомендуется, как дополнение к списку доменов <https://github.com/jameszeroX/zkeen-domains>
+Сборка содержит IP-подсети Cloudflare, Telegram, России, Беларуси и Украины, и рекомендуется, как дополнение к списку доменов <https://github.com/jameszeroX/zkeen-domains>
+Может использоваться как в режиме "всё напрямую кроме..", так и в режиме "всё через прокси кроме..." Примеры кода ниже.
 
 ## Ссылка для загрузки крайней версии
 
 - <https://github.com/jameszeroX/zkeen-ip/releases/latest/download/zkeenip.dat>
 
 ## Примеры использования
+всё напрямую кроме..
 
 ```json
+# всё напрямую кроме...
 {
   "routing": {
     "domainStrategy": "IPOnDemand",
@@ -56,6 +59,7 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
 }
 ```
 ```json
+# всё через прокси кроме...
 {
   "routing": {
     "domainStrategy": "IPOnDemand",
