@@ -42,6 +42,7 @@ Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
         "ip": [
           "ext:zkeenip.dat:cloudflare",
           "ext:zkeenip.dat:telegram",
+          "ext:zkeenip.dat:google",
           "ext:zkeenip.dat:ua"
         ],
         "inboundTag": ["redirect", "tproxy"],
