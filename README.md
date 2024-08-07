@@ -4,7 +4,7 @@
 
 Telegram <https://t.me/+SZWOjSlvYpdlNmMy>
 
-Сборка содержит IP-подсети Cloudflare, Telegram, России, Беларуси и Украины, и рекомендуется, как дополнение к списку доменов <https://github.com/jameszeroX/zkeen-domains>
+Сборка содержит IP-подсети Cloudflare, Google, Telegram, России, Беларуси и Украины, и рекомендуется, как дополнение к списку доменов <https://github.com/jameszeroX/zkeen-domains>
 
 Может использоваться как в режиме "всё напрямую кроме..", так и в режиме "всё через dummy кроме..." Примеры кода ниже.
 
